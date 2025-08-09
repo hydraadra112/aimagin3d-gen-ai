@@ -1,10 +1,11 @@
 import streamlit as st
 
 def main():
-    st.header("Hi Andrea!!")
+    st.header("Food SPARK!")
 
-    st.caption("Welcome to GENERATIVE AI Track!")
-
+    choice = st.selectbox("Gastronomy: Choose and learn Iloilo's best local dishes",
+                          ("La Paz Batchoy", "Molo", "Jaro", "Arevalo (Villa)", "Oton"))
+    st.write(choice)
 
 if __name__ == "__main__":
     main()
